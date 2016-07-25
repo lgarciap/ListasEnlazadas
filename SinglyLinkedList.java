@@ -1,5 +1,12 @@
 import java.util.Iterator;
 
+/**
+ * @author Estructura de Datos
+ * @version 0.0
+ * @date 24/07/2016
+ * @file SinglyLinkedList.java
+ * Implementa una lista enlazada
+ */
 public class SinglyLinkedList<E> implements IList<E>
 {
 	protected int count; // list size

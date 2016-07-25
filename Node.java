@@ -1,3 +1,10 @@
+/**
+ * @author Estructura de Datos
+ * @version 0.0
+ * @date 24/07/2016
+ * @file Node.java
+ * Modela un elemento de una lista enlazada
+ */
 public class Node<E>
 {
    protected E data; // value stored in this element
