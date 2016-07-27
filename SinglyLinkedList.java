@@ -6,6 +6,7 @@ import java.util.Iterator;
  * @date 24/07/2016
  * @file SinglyLinkedList.java
  * Implementa una lista enlazada
+ * 
  */
 public class SinglyLinkedList<E> implements IList<E>
 {
