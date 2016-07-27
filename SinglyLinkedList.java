@@ -151,20 +151,20 @@ public class SinglyLinkedList<E> implements IList<E>
 
 	@Override
 	public int indexOf(E value) {
-	  int indexOF = 0;
-	  finger = head;
-	  
-	  while (finger !=null)
-	  { 
-	    if (finger.equals(value))
-	    {
-	      return index;
-	    }
-	    
-	    index++;
-	    finger = finger.next;
-	  }
-	 return -1;
+		  int indexOF = 0;
+		 /* finger = head;
+		  
+		  while (finger !=null)
+		  { 
+		    if (finger.equals(value))
+		    {
+		      return index;
+		    }
+		    
+		    index++;
+		    finger = finger.next;
+		  }*/
+		 return -1;
 	}
 	
 
