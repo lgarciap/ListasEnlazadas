@@ -149,6 +149,7 @@ public class SinglyLinkedList<E> implements IList<E>
 		return finger != null;
 	}
 
+	
 	@Override
 	public int indexOf(E value) {
 		  int indexOF = 0;
@@ -202,6 +203,17 @@ public class SinglyLinkedList<E> implements IList<E>
 	public Iterator<E> iterator() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public String toString() {
+		Node<E> finger = head;
+		String cadena = "";
+		while (finger.next() != null){
+			cadena += finger.value()+" ";
+			finger = finger.next();
+		}
+		return cadena;
 	}
 	
 	
