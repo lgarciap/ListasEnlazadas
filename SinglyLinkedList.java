@@ -205,6 +205,9 @@ public class SinglyLinkedList<E> implements IList<E>
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
 		Node<E> finger = head;
