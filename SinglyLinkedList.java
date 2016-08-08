@@ -73,10 +73,16 @@ public class SinglyLinkedList<E> implements IList<E>
 		return head.value();
 	}
 
+	/**
+	 * Luis Diego Sierra, Carlos Solórzano
+	 */
 	@Override
 	public E getLast() {
-		// TODO Auto-generated method stub
-		return null;
+		Node<E> finger = head;
+		while (finger.next() != null) {
+			finger = finger.next();
+		}
+		return  finger.value();
 	}
 
 	@Override
