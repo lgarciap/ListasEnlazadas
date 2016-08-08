@@ -150,6 +150,9 @@ public class SinglyLinkedList<E> implements IList<E>
 	}
 
 	
+	/* (non-Javadoc)
+	 * @see IList#indexOf(java.lang.Object)
+	 */
 	@Override
 	public int indexOf(E value) {
 		  int indexOF = 0;
