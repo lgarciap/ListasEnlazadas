@@ -6,33 +6,61 @@ import java.util.Iterator;
  * @date 24/07/2016
  * ADT para Listas
  */
+
 public interface IList<E> 
 {
 
-   public int size();
+	 /**
+	 * @return returns number of elements in list
+	 */
+	public int size();
    // post: returns number of elements in list
 
-   public boolean isEmpty();
+   /**
+	 * @return true if list has no elements
+	 */
+	public boolean isEmpty();
    // post: returns true iff list has no elements
 
-   public void clear();
+   /**
+	 * empties list
+	 */
+	public void clear();
    // post: empties list
 
-   public void addFirst(E value);
+   /**
+     * value is added to beginning of list
+	 * @param value
+	 */
+	public void addFirst(E value);
    // post: value is added to beginning of list
 
-   public void addLast(E value);
+   /**
+     * value is added to end of list
+	 * @param value
+	 */
+	public void addLast(E value);
    // post: value is added to end of list
 
-   public E getFirst();
+   /**
+	 * @return first value in list
+	 */
+	public E getFirst();
    // pre: list is not empty
    // post: returns first value in list
 
-   public E getLast();
+   /**
+    * @return last value in list
+    */
+	public E getLast();
    // pre: list is not empty
    // post: returns last value in list
 
-   public E removeFirst();
+   /**
+    * removes first value from list
+    * @return element removed
+    */
+	public E removeFirst();
    // pre: list is not empty
    // post: removes first value from list
 
@@ -59,7 +87,11 @@ public interface IList<E>
    // pre: value is not null
    // post: returns true iff list contains an object equal to value
 
-   public int indexOf(E value);
+   /**
+ * @param value el valor a buscar en la lista
+ * @return int La posición del valor que se buscaba
+ */
+public int indexOf(E value);
    // pre: value is not null
    // post: returns (0-origin) index of value,
    // or -1 if value is not found
