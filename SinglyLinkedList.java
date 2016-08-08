@@ -75,13 +75,13 @@ public class SinglyLinkedList<E> implements IList<E>
 	@Override
 	public E getLast() {
 		// TODO Auto-generated method stub
-		Node<E> newNode = new Node<E>(value, null); //creates the new node
+		Node<E> newNode = new Node<E>(null); //creates the new node
 		if (head != null){
 			Node<E> finger = head;
 			while (finger.next() != null){
 				finger = finger.next();
 			}
-			return finger;
+			return (E) finger;
 		}else{
 			return null;	
 		}
