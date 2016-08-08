@@ -6,6 +6,7 @@ import java.util.Iterator;
  * @date 24/07/2016
  * @file SinglyLinkedList.java
  * Implementa una lista enlazada
+ * 
  */
 public class SinglyLinkedList<E> implements IList<E>
 {
@@ -22,6 +23,7 @@ public class SinglyLinkedList<E> implements IList<E>
 	@Override
 	public int size() {
 		// TODO Auto-generated method stub
+		//
 		return count;
 	}
 
@@ -72,20 +74,16 @@ public class SinglyLinkedList<E> implements IList<E>
 		return head.value();
 	}
 
+	/**
+	 * Luis Diego Sierra, Carlos Solórzano
+	 */
 	@Override
 	public E getLast() {
-		// TODO Auto-generated method stub
-		Node<E> newNode = new Node<E>(null); //creates the new node
-		if (head != null){
-			Node<E> finger = head;
-			while (finger.next() != null){
-				finger = finger.next();
-			}
-			return (E) finger;
-		}else{
-			return null;	
+		Node<E> finger = head;
+		while (finger.next() != null) {
+			finger = finger.next();
 		}
-		
+		return  finger.value();
 	}
 
 	@Override
@@ -158,11 +156,25 @@ public class SinglyLinkedList<E> implements IList<E>
 		return finger != null;
 	}
 
+	
 	@Override
 	public int indexOf(E value) {
-		// TODO Auto-generated method stub
-		return 0;
+		  int indexOF = 0;
+		  Node<E> finger = head;
+		  
+		  while (finger !=null)
+		  { 
+		    if (finger.equals(value))
+		    {
+		      return indexOF;
+		    }
+		    
+		    indexOF++;
+		    finger = finger.next();
+		  }
+		 return -1;
 	}
+	
 
 	@Override
 	public int lastIndexOf(E value) {
@@ -198,6 +210,20 @@ public class SinglyLinkedList<E> implements IList<E>
 	public Iterator<E> iterator() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		Node<E> finger = head;
+		String cadena = "";
+		while (finger.next() != null){
+			cadena += finger.value()+" ";
+			finger = finger.next();
+		}
+		return cadena;
 	}
 	
 	
