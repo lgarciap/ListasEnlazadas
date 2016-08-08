@@ -8,7 +8,7 @@
  */
 public class DoubleNode<E> extends Node<E> {
 
-	private DoubleNode<E> prevElemenet;
+	private DoubleNode<E> prevElement;
 	
 	
 	/**
@@ -16,7 +16,7 @@ public class DoubleNode<E> extends Node<E> {
 	 */
 	public DoubleNode(E value) {
 		super(value);
-		prevElemenet = null;
+		prevElement = null;
 	} 
 	
 	/**
@@ -26,14 +26,14 @@ public class DoubleNode<E> extends Node<E> {
 	 */
 	public DoubleNode(E value, DoubleNode<E> next, DoubleNode<E>prev){
 		super(value, next);
-		prevElemenet = prev;
+		prevElement = prev;
 	}
 	
 	/**
 	 * @return el elemento anterior
 	 */
 	public DoubleNode<E> getPrevElemenet() {
-		return prevElemenet;
+		return prevElement;
 	}
 
 	
@@ -41,7 +41,7 @@ public class DoubleNode<E> extends Node<E> {
 	 * @param prevElemenet: Agrega el elemento siguiente.
 	 */
 	public void setPrevElemenet(DoubleNode<E> prevElemenet) {
-		this.prevElemenet = prevElemenet;
+		this.prevElement = prevElemenet;
 	}
 
 }
