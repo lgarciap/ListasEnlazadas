@@ -76,7 +76,17 @@ public class SinglyLinkedList<E> implements IList<E>
 	@Override
 	public E getLast() {
 		// TODO Auto-generated method stub
-		return null;
+		Node<E> newNode = new Node<E>(null); //creates the new node
+		if (head != null){
+			Node<E> finger = head;
+			while (finger.next() != null){
+				finger = finger.next();
+			}
+			return (E) finger;
+		}else{
+			return null;	
+		}
+		
 	}
 
 	@Override
@@ -150,6 +160,9 @@ public class SinglyLinkedList<E> implements IList<E>
 	}
 
 	
+	/* (non-Javadoc)
+	 * @see IList#indexOf(java.lang.Object)
+	 */
 	@Override
 	public int indexOf(E value) {
 		  int indexOF = 0;

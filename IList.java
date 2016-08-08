@@ -64,7 +64,11 @@ public interface IList<E>
    // pre: list is not empty
    // post: removes first value from list
 
-   public E removeLast();
+   /**
+ * @return the last value
+ *  removes last value from list
+ */
+public E removeLast();
    // pre: list is not empty
    // post: removes last value from list
 
