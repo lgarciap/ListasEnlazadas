@@ -23,6 +23,7 @@ public class SinglyLinkedList<E> implements IList<E>
 	@Override
 	public int size() {
 		// TODO Auto-generated method stub
+		//
 		return count;
 	}
 
