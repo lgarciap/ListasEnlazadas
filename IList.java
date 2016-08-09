@@ -153,8 +153,8 @@ public interface IList<E>
 	
 	/**
 	 * Adiciona un elemento en la posición i
-	 * @param i: posición donde estará el elemento
-	 * @param o: valor del elemento
+	 * @param i posición donde estará el elemento
+	 * @param o valor del elemento
 	 */
 	public void add(int i, E o);
 	   // pre: 0 <= i <= size()

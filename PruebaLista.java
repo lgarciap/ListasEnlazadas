@@ -26,11 +26,10 @@ public class PruebaLista {
 		
 		//Probando el indexOf
 		Integer valor = lista.indexOf(50);
-
-		
 		System.out.println(valor);
 
 	}
+	
 
 
 }
