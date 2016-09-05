@@ -1,4 +1,6 @@
 import java.util.Random;
+import java.text.NumberFormat;
+import java.util.*;
 
 /**
  * 
@@ -19,15 +21,17 @@ public class PruebaLista {
 		SinglyLinkedList<Integer> lista = new SinglyLinkedList<Integer>();
 		Random num = new Random(100);
 		//Se le añaden 10 números aleatorios
-		for (int i=0; i<10; i++){
+		for (int i=0; i<5; i++){
 			lista.addLast(num.nextInt(100));
 		}
 		System.out.println(lista);
 		
-		//Probando el indexOf
+		//Probando el indexOf    
+		
+		//
+		//
 		Integer valor = lista.indexOf(50);
-		System.out.println(valor);
-
+		
 	}
 	
 
